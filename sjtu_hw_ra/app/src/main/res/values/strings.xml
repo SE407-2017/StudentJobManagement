@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Oldnote</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_clock">ClockActivity</string>
+    <string name="title_activity_cancle">CancleActivity</string>
+</resources>

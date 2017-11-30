@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/bei1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="#ffff0000"
+            android:id="@id/writedate"
+
+            android:layout_width="300.0dip"
+            android:layout_height="30.0dip"
+            android:layout_alignTop="@+id/rewrite"
+            android:layout_centerHorizontal="true" />
+
+
+        <Button
+            android:textColor="#fff"
+            android:id="@+id/rewrite"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:onClick="reClick"
+            android:text="原内容" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/writedown"
+        android:layout_width="300.0dip"
+        android:layout_height="108.0dip"
+        android:layout_gravity="center"
+
+        android:lineSpacingExtra="3.0dip"
+        android:scrollbars="vertical"
+        android:textColor="#ff000000"
+        android:textSize="18.0sp" />
+
+    <Button
+        android:id="@+id/savedata"
+        android:layout_width="130.0dip"
+        android:layout_height="40.0dip"
+        android:layout_alignRight="@id/edittext"
+        android:layout_below="@id/edittext"
+        android:layout_gravity="center"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="30.0dip"
+        android:background="@drawable/bei7"
+        android:text="确定"
+        android:textColor="#ffffffff" />
+
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
