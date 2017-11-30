@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Button
+        android:id="@id/topButton"
+        android:layout_width="fill_parent"
+        android:layout_height="75dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="68dp"
+        android:background="@drawable/bei7"
+        android:onClick="doClick"
+        android:paddingRight="100.0dip"
+        android:text="                       记作业啦"
+        android:textColor="#ffffffff"
+        android:textSize="18dp" />
+    <Button
+        android:textSize="18dp"
+        android:text="退出"
+        android:textColor="#ffffffff"
+        android:id="@+id/exit"
+        android:background="@drawable/bei7"
+        android:layout_width="55.0dip"
+        android:layout_height="75dp"
+        android:layout_marginRight="17.0dip"
+        android:layout_alignRight="@id/topButton"
+        android:layout_alignParentRight="true" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_below="@+id/topButton"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+        </RadioGroup>
+
+        <ListView
+            android:id="@id/listview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:listSelector="#00000000"
+            android:layout_below="@id/topButton" />
+
+    </LinearLayout>
+
+</RelativeLayout>
